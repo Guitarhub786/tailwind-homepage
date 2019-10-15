@@ -1,0 +1,81 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: red;
+}
+
+#editor {
+  height: 80%;
+  /* hide display */
+  width: 0%;
+  display: inline-block;
+  border-width: 20px;
+}
+#editor2 {
+  height: 80%;
+  width: 43%;
+  display: inline-block;
+  border-width: 20px;
+}
+
+#container {
+  height: 100%;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+#iframe {
+  /* hide display */
+  display: none;
+  height: 70%;
+  /* display: inline-block; */
+  width: 15%;
+  border-width: 2px;
+}
+#iframe2 {
+  height: 79%;
+  display: inline-block;
+  width: 20%;
+  border-width: 2px;
+}
+
+#myTextarea {
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  height: 79%;
+  display: inline-block;
+  width: 35%;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#run_button {
+  font-size: 40px;
+}
+
+/* disable tag matching */
+.ace_editor .ace_marker-layer .ace_bracket {
+  display: none;
+}
+
+
+#button1, #btn-answer, #run_button, #btn-auto {
+  /* background-color: #4CAF50; */
+  /* border: none; */
+  /* color: white; */
+  width: 180px;
+  height: 50px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

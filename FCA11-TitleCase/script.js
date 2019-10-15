@@ -1,3 +1,5 @@
+
+
 document.getElementById("btn-answer").addEventListener("click", loadAnswer);
 document.getElementById("btn-auto").addEventListener("click", buttonAuto);
 
@@ -47,17 +49,21 @@ function setupEditor() {
   editor.getSession().setTabSize(2);
   editor.getSession().setUseWrapMode(true);
   editor.setValue(
+    // === SET x = result HERE ===
     `
     <!DOCTYPE html><html><body>
         <h2 id="idOutput">Output...</h2>
-        <h2 id="idDone" onclick="myFunction()" style='color: red' >Waiting...</h2>
+        <h2 id="idDone" onclick="myFunction()" style='color: red' >Waiting ...</h2>
     <script>
         
         document.getElementById("idOutput").innerHTML = x;  
         
-        if (x === 6) {
+        if (x === 'No Need To Shout!') {
+          document.body.style.backgroundColor = "#FFFF64";
           document.getElementById("idDone").style.color = "green"; 
-          document.getElementById("idDone").innerHTML = 'Done!'; 
+          document.getElementById("idDone").innerHTML = '&#128504; Done!!!'; 
+        } else {
+          document.body.style.backgroundColor = "white";
         }
     </script></body></html>
     `,
@@ -119,12 +125,14 @@ function setupEditor2() {
   editor2.getSession().setTabSize(2);
   editor2.getSession().setUseWrapMode(true);
   editor2.setValue(
+    // === SET TEMPLATE HERE ===
     `
-function add() {
-  
+function titleCase(str) {
+  return str;
 }
 
-x = add(2,4);`,
+x = titleCase("No need to SHOUT!");
+`,
     1
   ); //1 = moves cursor to end
 
@@ -158,7 +166,8 @@ function loadAnswer() {
   if (show) {
     document.getElementById("btn-answer").innerText = "Hide Answer";
     document.getElementById("myTextarea").style.color = "blue";
-    document.getElementById("myTextarea").value = displayQuestion + displayAnswer;
+    document.getElementById("myTextarea").value = displayAnswer;
+    // .value = displayQuestion + displayAnswer;
     show = false;
   } else {
     document.getElementById("btn-answer").innerText = "Show Answer";
@@ -188,21 +197,29 @@ function buttonAuto() {
 setupEditor2();
 update2();
 
-// input QUESTION here
+// === input QUESTION here ===
 var displayQuestion =
   `
-Function that takes two arguments and then returns a value adding them together:
+Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
 
-add(2,4) result... '6'
+For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+
+titleCase("No need to SHOUT!") should return "No Need To Shout!"
 `;
 
-// input ANSWER here
+// === input ANSWER here ===
 var displayAnswer =
   `
-// Solution      
-function add(sum1,sum2) {
-  return (sum1+sum2);
+function titleCase(str) {
+  let strLower = str.toLowerCase();
+  let words = strLower.split(" ");
+  let titleCasedWords = [];
+
+  for (var i = 0; i < words.length; i++) {
+    titleCasedWords.push(words[i][0].toUpperCase() + words[i].slice(1));
+  }
+  return titleCasedWords.join(" ");
 }
-      
-x = add(2,4);
+
+titleCase("No need to SHOUT!");
 `;
