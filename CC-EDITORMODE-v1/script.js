@@ -2,6 +2,9 @@ document.getElementById("btn-answer").addEventListener("click", loadAnswer);
 document.getElementById("btn-auto").addEventListener("click", buttonAuto);
 document.getElementById("btn-edit").addEventListener("click", buttonEdit);
 
+// Start program wiht btn-auto on
+document.getElementById("btn-auto").click();
+
 var storeHTML;
 var storeJS;
 var show = true;
@@ -10,6 +13,9 @@ var edit = false;
 var attempt = 0;
 
 setTimeout(loadQuestion, 100);
+
+// click btn-auto at start
+document.getElementById("btn-auto").click();
 
 
 run_button.addEventListener("click", function () {

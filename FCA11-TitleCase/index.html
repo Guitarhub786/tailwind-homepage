@@ -12,17 +12,22 @@
 
 <body onload='ready()'>
 
-  <h2>Exercise 11: Title Case a Sentence</h2>
+  <div id='header'>
 
-  <button id=run_button>Run</button>
-  <button id=btn-auto>Auto: on</button>
-  <button id="btn-answer">Load Answer</button>
+    <button id=run_button>Run</button>
+    <button id=btn-auto>Auto: on</button>
+    <button id="btn-answer">Show Answer</button>
+    <h2>Exercise 11: Title Case a Sentence</h2>
+
+  </div>
 
   <div id='container'>
 
     <div id="editor">
     </div>
     <div id="editor2">
+    </div>
+    <div id="editor3">
     </div>
 
     <textarea id='myTextarea' rows="35" cols="23" readonly>
@@ -33,6 +38,8 @@
     </iframe>
     <iframe id='iframe2' scrolling="no" srcdoc="Click Run button">
     </iframe>
+
+
 
   </div>
   <script src="script.js"></script>
