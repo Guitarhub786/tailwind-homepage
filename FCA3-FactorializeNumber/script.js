@@ -113,7 +113,7 @@ function update2() {
     var idoc2 = document.getElementById("iframe2").contentWindow.document;
 
     idoc2.open();
-    idoc2.write(editor2.getValue());  // original (need 'RUN' button)
+    // idoc2.write(editor2.getValue());  // original (need 'RUN' button)
     idoc2.write(storeMix);            // updates live
     idoc2.close();
   }
