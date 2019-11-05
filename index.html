@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <!-- <a href="index.html">Home</a> -->
   <title>Code Challenge</title>
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen bg-freecode-purple text-gray-300">
+  <header class="bg-black mb-12 text-center flex justify-between px-6">
+    <div class="w-1/3 flex my-auto">
+      <div class="flex my-auto"><svg class="z-10 my-auto -mr-6" width="15" height="15" viewBox="0 0 15 15" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.0515 10.8787C8.9895 11.7562 7.62713 12.2835 6.14175 12.2835C2.74988 12.2835 0 9.534 0 6.14175C0 2.74988 2.74988 0 6.14175 0C9.534 0 12.2835 2.74988 12.2835 6.14175C12.2835 7.62675 11.7562 8.9895 10.8787 10.0515L14.829 14.0018C15.0566 14.2294 15.0578 14.598 14.8275 14.8275C14.5988 15.0563 14.2286 15.0562 14.0018 14.829L10.0515 10.8787ZM6.14175 11.1139C8.88788 11.1139 11.1143 8.88788 11.1143 6.14138C11.1143 3.39638 8.88788 1.17 6.14175 1.17C3.396 1.17 1.17 3.396 1.17 6.14175C1.17 8.88788 3.396 11.1143 6.14175 11.1143V11.1139Z"
+            fill="#D0D0D5" />
+        </svg><input class="z-0 bg-freecode-purple-search pr-64 pl-8 text-lg rounded" type="text"
+          value="Search 5,000+ tutorials">
+      </div>
+    </div>
+    <div class="w-1/3">
+      <div class="text-2xl"><a href="#">freeCodeAcademy</a></div>
+    </div>
+    <div class="w-1/3 border-none">
+      <div class="text-xl">
+        <ul class="flex justify-end">
+          <a href="#"><li class="hover:bg-white hover:text-freecode-purple px-6 py-2"">/news</li></a>
+          <a href=" #"><li class=" hover:bg-white hover:text-freecode-purple px-6 py-2"">/forum</li></a>
+          <a href=" #"><li class="hover:bg-white hover:text-freecode-purple px-6 py-2">/learn</li></a>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="rounded mx-48 flex-1">
+    <h1 class="text-center text-5xl font-mono font-extrabold mb-16 text-white">Welcome to freeCodeAcademy</h1>
+    <h1 class="text-center text-3xl font-mono mb-8">Learn to code.</h1>
+    <h1 class="text-center text-3xl font-mono mb-8">Build projects.</h1>
+    <h1 class="text-center text-3xl font-mono mb-12">Earn certifications.</h1>
 
-  <h1>CODE CHALLENGE: Free Code Academy</h1>
-  <div id="container">
+    <p class="font-mono text-center text-2xl w-240 mx-auto mb-16">Since 2014, more than 40,000 freeCodeCamp.org
+      graduates have gotten jobs at tech companies including:</p>
+    <div class="font-mono">
+      <ul class="flex justify-around w-260 mx-auto text-3xl mb-16">
+        <li>Apple</li>
+        <li>Google</li>
+        <li>Amazon</li>
+        <li>Microsoft</li>
+        <li>Spotify</li>
+      </ul>
+      <div class="text-center mb-12">
+        <button
+          class="font-mono text-freecode-purple shadow-lg rounded bg-freecode-yellow text-2xl py-2 px-64 hover:bg-freecode-yellow-hover">Sign
+          in and get
+          started (it's free)</button>
+      </div>
+      <div class="text-white w-260 mx-auto text-2xl">
+        <h2 class="mb-6">
+          <a href="./FCA2-ReverseString/index.html">Coding Challenges:</a>
+        </h2>
+        <h2 class="mb-6">
+          <a class="underline hover:no-underline" href="./FCA2-ReverseString/index.html">FCA2 - Reverse a String</a>
+        </h2>
 
-    <h2>
-      <a href="./FCA2-ReverseString/index.html">FCA2-Reverse a String</a>
-    </h2>
+        <h2 class="mb-6">
+          <a class="underline hover:no-underline" href="./FCA3-FactorializeNumber/index.html">FCA3 - Factorialize a
+            Number</a>
+        </h2>
 
-    <h2>
-      <a href="./FCA3-FactorializeNumber/index.html">FCA3-Factorialize a Number</a>
-    </h2>
+        <h2 class="mb-6">
+          <a class="underline hover:no-underline" href="./FCA4-FindLongestWordString/index.html">FCA4 - Finding the
+            Longest Word in a String</a>
+        </h2>
 
-    <h2>
-      <a href="./FCA4-FindLongestWordString/index.html">FCA4-Finding the Longest Word in a String</a>
-    </h2>
+        <h2 class="mb-6">
+          <a class="underline hover:no-underline" href="./FCA6-ConfirmEnding/index.html">FCA6 - Confirm Ending</a>
+        </h2>
 
-    <h2>
-      <a href="./FCA6-ConfirmEnding/index.html">FCA6-Confirm Ending</a>
-    </h2>
+        <h2 class="mb-6">
+          <a class="underline hover:no-underline" href="./FCA7-RepeatString/index.html">FCA7 - Repeat a String</a>
+        </h2>
 
-    <h2>
-      <a href="./FCA7-RepeatString/index.html">FCA7-Repeat a String</a>
-    </h2>
+        <h2 class="mb-6">
+          <a class="underline hover:no-underline" href="./FCA11-TitleCase/index.html">FCA11 - Title Case a Sentence</a>
+        </h2>
 
-    <h2>
-      <a href="./FCA11-TitleCase/index.html">FCA11-Title Case a Sentense</a>
-    </h2>
-
-    <h2>
-      <a href="./Arrays-AddRemoveItems/">Arrays Add Remove Items</a>
-    </h2>
-
+        <h2 class="mb-6">
+          <a class="underline hover:no-underline" href="./Arrays-AddRemoveItems/">Arrays Add Remove Items</a>
+        </h2>
+      </div>
+    </div>
   </div>
+
+
+  <footer class="w-full bg-freecode-purple-light pt-48"></footer>
 </body>
 
 </html>
